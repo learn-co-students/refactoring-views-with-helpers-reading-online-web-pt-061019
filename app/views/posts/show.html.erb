@@ -1,2 +1,9 @@
+<% title @post.title %>
+
 <h1><%= @post.title %></h1>
+<p><%= last_updated @post %></p>
+<%# @post.updated_at.strftime("Last updated %A, %b %e, at %l:%M %p") %>
 <p><%= @post.description %></p>
+
+
+<%# strftime site: https://www.foragoodstrftime.com/ %>
