@@ -15,4 +15,9 @@ class Post < ActiveRecord::Base
   def make_title_case
     self.title = self.title.titlecase
   end
+  # Moved to PostHelper with argument of post because of association
+  # def last_update
+  #   post.update_at.strftime("Last update %A, %b %e, at %1:
+  #   %M %p")
+  # end 
 end
